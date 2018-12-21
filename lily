@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>lily</title>
+    <style>
+        body {
+            font-family: arial;
+    color: #2B2B2B;
+    background-color: white;
+}
+h1, h2, h3, h4, p, a {
+    font-weight: 100;
+}
+h1, h2, h3, h4 {
+    margin-bottom: 54px;
+        }
+.greeting {
+    font-size: 119px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 74px;
+}
+.intro {
+    font-size: 119px;
+    margin-top: 64px;
+    text-align: right;
+    margin-right: 68px;
+    margin-left: 24px;
+}
+.section-header {
+    font-size: 140px;
+    text-align: left;
+    margin-bottom: 148px;
+    margin-top: 172px;
+    margin-left: 36px;
+}
+.project-block{
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 54px;
+}
+.process-header{
+    font-size: 72px;
+    margin-bottom: 22px;
+    margin-top: 22px;
+}
+.process-subheader{
+    font-size: 64px;
+    margin-top: 0px;
+    margin-left: 92px;
+    margin-right: 92px;
+    margin-bottom: 28px;
+    line-height: 1.5;
+}
+.project-image{
+    width: 718px;
+    height: 454px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.project-image1{
+    width: 400px;
+    margin-bottom: 24px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.project-image2{
+    width: 400px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.project-image3{
+    width: 400px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+        }
+ a{
+    color: #2B2B2B;
+    border-bottom: 0px;
+    font-size: 11vh;
+    text-decoration: unset;
+    font-weight: 500;
+        }
+.back-button{
+    img-align: right;
+    margin-right: 68px;
+    height: 150px;
+    }
+        
+@media only screen and (min-device-width: 768px) {  
+.greeting {
+    font-size: 119px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 74px;
+    }
+ a{
+    color: #2B2B2B;
+    border-bottom: 0px;
+    font-size: 119px;
+    text-decoration: unset;
+    font-weight: 500;
+}
+.emoji{
+    width: 75px;
+    margin-bottom: -5px;  
+    margin-left: 12px;
+}
+.intro {
+    font-size: 11vh;
+    margin-top: 24px;
+    text-align: right;
+    margin-right: 84px;
+    margin-left: 84px;
+}
+.section-header {
+    font-size: 11vh;
+    text-align: left;
+    margin-bottom: 48px;
+    margin-top: 154px;
+    margin-left: 22px
+}
+.project-block{
+    text-align: center;
+    margin-bottom: -22px;
+    margin-top: 52px;
+}
+.process-header{
+    font-size: 5vh;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+.process-subheader{
+    font-size: 3vh;
+    margin-top: 0px;
+    margin-left: 48px;
+    margin-right: 48px;
+    margin-bottom: 28px;
+    line-height: 2;
+}
+.project-image{
+    width: 718px;
+    height: 454px;
+    margin-bottom: -34px;
+    margin-top: 60px;
+    margin-left: -2px;
+}
+.project-image1{
+    width: 250px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-right: -3px;
+}
+.project-image2{
+    width: 250px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.project-image3{
+    width: 250px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-right: -3px;
+        }
+.back-button{
+    height: 100px;
+    margin-right: 68px;
+    }
+        }
+        }
+    </style>
+</head>
+
+<body>
+<h1 class ="greeting" style= "margin-top: 42px;"> <a href= "https://nigeldurham.github.io/ux/about.html">about</a></h3>
+<h1 class= "greeting"> <a href= "https://nigeldurham.github.io/ux/work.html">work</a></h3>
+
+<h1 class="intro">lily</h1>
+<h2 class="intro">plant care app</h2>
+<!--- <h3 class="intro">archive for curators and gallerists</h3> --->
+<!--- <h4 class="section-header">story</h4> --->
+<!--- <img class="intro" src="down Chevron.png"> --->
+
+<div class="project-block">
+    <img class="project-image" src="Personas.png">
+    <h3 class="process-header">personas</h3></h3>
+    <h4 class="process-subheader">carmen (curator) <br> mandelle (artist)</h4>
+</div>
+
+<div class="project-block">
+    <img class="project-image1" src="Screen 1.png">
+    <h3 class="process-header">ideation</h3>
+    <h4 class="process-subheader">how do they connect?</h4>
+</div>
+
+<div class="project-block">
+    <img class="project-image2" src="Screen 2.png">
+    <h3 class="process-header">development</h3>
+    <h4 class="process-subheader">artists can share<br> curators can search</h4>
+</div>
+
+<div class="project-block">
+    <img class="project-image3" src="Screen 3.png">
+    <h3 class="process-header">product</h3>
+    <h4 class="process-subheader">mobile gallery</h4>
+</div>
+
+<div class="project-block" style="text-align:right; margin-top: 64px">    
+<a href= "https://nigeldurham.github.io/ux/work.html"><img class="back-button" style= "text-align: right; margin-right: 68px" src= "backbutton.png"></a> 
+</div>
+    
+<h1 class="greeting" style= "margin-bottom: 72px" > <a href="https://nigeldurham.github.io/ux/contact.html">contact</a></h1>
+<!--- <h3 class="section-header2">me<br>here</h3> --->
+<!--- <div class="links" style= "margin-bottom: 48px;"><a href="mailto:nigel.jp.durham@gmail.com">nigel.jp.durham@gmail.com</a></div> --->
+<!--- <div style="margin-left: 84px; margin-bottom: 54px;"><a href="../ux/njpduxresumelong.pdf">Resume</a></div> --->
+<!--- <div class="links" style= "margin-bottom: 48px;"><a href="https://linkedin.com/in/nigeldurham">LinkedIn</a></div> --->
+<!--- <div style="margin-left: 104px; margin-bottom: 54px;"><a hr33ef="https://medium.com/@nigel.jp.durham">Medium</a></div> --->
+<!--- <div style="margin-bottom: 342px; margin-left: 84px;"><a href="https://instagram.com/nigeldrhm">Instagram</a></div> --->
+<!--- <div class="links" style="margin-bottom: 48px;"><a href="tel: 3154307909">3154307909</a></div> --->
+<!--- <div style=" margin-left: 68px; margin-bottom: 123px;"><a href="../ux/NigelDurhamUXResume.pdf">Resume</a></div> --->
+</div>
+
+</body>
+</html>
