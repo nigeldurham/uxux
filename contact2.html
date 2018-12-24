@@ -19,8 +19,8 @@ h1, h2, h3, h4 {
     margin-top: 12px;
     margin-bottom: 12px;
     margin-left: 74px;
-    }
- a{
+}
+a{
     color: #2B2B2B;
     border-bottom: 0px;
     font-size: 11vh;
@@ -33,7 +33,7 @@ h1, h2, h3, h4 {
     margin-top: 12px;
     margin-bottom: 12px;
     margin-left: 74px;
-    }
+}
 .button {
   border: none;
   padding: 0;
@@ -44,11 +44,16 @@ h1, h2, h3, h4 {
   text-decoration: unset;
   font-weight: 500;
 }
-    </style>
-    </head>
+</style>
+</head>
+
 function myFunction() {
   document.getElementById("demo").innerHTML = "Paragraph changed.";
 }
+
+<button type="button"> onclick="document.getElementById('demo').innerHTML = aboutsection">
+About</button>
+
 <p id="demo">A Paragraph.</p>
 <body>
 <h1 class="button" style="margin-top: 42px">about</h1>
