@@ -237,14 +237,14 @@ h1, h2, h3, h4 {
 <script>
 window.onscroll = function() {myFunction()};
 
-var topnav-right = document.getElementById("topnav-right");
-var sticky = topnav-right.offsetTop;
+var topnav = document.getElementById("topnav");
+var sticky = topnav.offsetTop;
 
 function myFunction() {
   if (window.pageYOffset >= sticky) {
-    topnav-right.classList.add("sticky")
+    topnav.classList.add("sticky")
   } else {
-    topnav-right.classList.remove("sticky");
+    topnav.classList.remove("sticky");
   }
 }
 </script>
