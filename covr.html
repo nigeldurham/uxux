@@ -191,9 +191,31 @@ h1, h2, h3, h4 {
     margin-right: 24px;
     margin-top: 24px;
     font-size: 24px;
+    position: fixed;
+}
+#carousel {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    overflow: visible;
+    white-space: nowrap;
+    margin-top: 15%;
+    margin-left: 24px; 
+    position: absolute;
+}
+#carousel .slide {
+    display: inline-block;
+    padding: 15px; 
+}
+.bannerContainer {
+    position:relative;     
+}
+* {
+  box-sizing: border-box;
 }
     }
         }
+    
 </style>
 </head>
 <body>
@@ -216,33 +238,37 @@ h1, h2, h3, h4 {
 <!--- <h3 class="intro">connecting musicians with spaces and events</h3> --->
 <!--- <h4 class="section-header">story</h4> --->
 
-<div class="project-block">
+<div id="carousel">
+<div class="slide">
     <a href="https://wwww.nigeldurham.com/covrpersonas.html"><img class="project-image" src="COVR Personas.png"></a>
     <h3 class="process-header">personas</h3></h3>
     <h4 class="process-subheader">sean / venue owner<br>laurence / musician</h4>
 </div>
-
-<div class="project-block">
+    
+<div id="carousel">
+<div class="slide">
     <img class="project-image1" src="COVR Screen 1.png">
     <h3 class="process-header">ideation</h3>
     <h4 class="process-subheader">how can they connect,<br>in real time?</h4>
 </div>
 
-<div class="project-block">
+<div id="carousel">
+<div class="slide">
     <img class="project-image2" src="COVR Screen 2.png">
     <h3 class="process-header">development</h3>
     <h4 class="process-subheader">an open-world<br>marketplace</h4>
 </div>
-
-<div class="project-block">
+    
+<div id="carousel">
+<div class="slide">
     <img class="project-image3" src="COVR Screen 3.png">
     <h3 class="process-header">product</h3>
     <h4 class="process-subheader">real-time event-hosting<br>& booking platform</h4>
 </div>
 
-<div style="text-align:right">    
+<!--- <div style="text-align:right">    
 <a href= "https://nigeldurham.github.io/ux/index.html"><img class="back-button" src= "backbutton2.png"></a> 
-</div>
+</div> --->
 
 <!--- <h1 class="greeting" style= "margin-bottom: 72px; margin-top: 12px;"> <a href="https://nigeldurham.github.io/ux/contact.html">contact</a></h1> --->
 <!--- <div style="margin-left: 120px; margin-bottom: 172px; margin-top: 172px"> --->
