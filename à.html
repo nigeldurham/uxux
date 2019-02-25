@@ -228,6 +228,38 @@ a{
     position: fixed;
     right: 0;
 }
+#navbar {
+  overflow: hidden;
+  background-color: white;
+  text-align: right;
+  margin-right: 24px;
+  margin-top: 0px;
+  font-size: 24px;
+}
+#navbar a {
+  float: right;
+  display: block;
+  color: #2B2B2B;
+  text-align: center;
+  padding: 18px 16px;
+  text-decoration: none;
+  font-size: 24px;
+}
+#navbar a.active {
+  background-color: white;
+  color: #2B2B2B;
+}
+.content {
+  padding: 16px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 99.1%; 
+}
+.sticky + .content {
+  padding-top: 60px;
+}
     }
         }   
 </style>
@@ -237,12 +269,10 @@ a{
 <!--- <h1 class ="greeting" style= "margin-top: 32px;"> <a href= "https://nigeldurham.github.io/ux/art.html">art</a></h3>
 <h1 class= "greeting"> <a href= "https://nigeldurham.github.io/ux/work.html">work</a></h3> --->
     
-<div class="topnav a">
-<div class="topnav-right">
+<div id="navbar">
 <a href="https://www.nigeldurham.com/about.html">About</a>
 <a href="https://www.nigeldurham.com/index.html">Work</a>
 <a href="https://www.nigeldurham.com/contact.html">Contact</a>
-</div>
 </div>
 
 <h1 class="title">À</h1>
