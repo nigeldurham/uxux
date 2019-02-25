@@ -114,10 +114,38 @@ a{
     margin-top: 24px;
     font-size: 24px;
 }        
+#navbar {
+  overflow: hidden;
+  background-color: white;
+  text-align: center;
+  margin-right: 0px;
+  margin-top: 0px;
+  font-size: 24px;
+}
+#navbar a {
+  float: right;
+  display: block;
+  color: #2B2B2B;
+  text-align: center;
+  padding: 18px 16px;
+  text-decoration: none;
+  font-size: 24px;
+}
+#navbar a.active {
+  background-color: white;
+  color: #2B2B2B;
+}
+.content {
+  padding: 16px;
+}
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100%; 
+  right: 0;
+}
+.sticky + .content {
+  padding-top: 60px;
 }
 @media only screen and (min-device-width: 768px) {      
 .title {
