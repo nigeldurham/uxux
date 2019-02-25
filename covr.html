@@ -103,6 +103,39 @@ h1, h2, h3, h4 {
     margin-top: 24px;
     font-size: 24px;
     }
+#navbar {
+  overflow: hidden;
+  background-color: white;
+  text-align: center;
+  margin-right: 0px;
+  margin-top: 0px;
+  font-size: 24px;
+}
+#navbar a {
+  display: inline-block;
+  color: #2B2B2B;
+  text-align: center;
+  padding: 16px 10px;
+  text-decoration: none;
+  font-size: 24px;
+}
+#navbar a.active {
+  background-color: white;
+  color: #2B2B2B;
+}
+.content {
+  padding: 16px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%; 
+  right: 0;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+
 .color {
     color: blue;
     }
@@ -264,12 +297,10 @@ h1, h2, h3, h4 {
 <!--- <h1 class ="greeting" style= "margin-top: 32px;"> <a href= "https://nigeldurham.github.io/ux/art.html">art</a></h3>
 <h1 class= "greeting"> <a href= "https://nigeldurham.github.io/ux/index.html">work</a></h3> --->
 
-<div class="topnav a">
-<div class="topnav-right">
+<div id="navbar">
 <a href="https://www.nigeldurham.com/about.html">About</a>
 <a href="https://www.nigeldurham.com/index.html">Work</a>
 <a href="https://www.nigeldurham.com/contact.html">Contact</a>
-</div>
 </div>
  
 <!--- <h1 class="greeting">design</h1> --->
@@ -340,10 +371,10 @@ h1, h2, h3, h4 {
 <a href= "https://nigeldurham.github.io/ux/index.html"><img class="back-button" src= "backbutton2.png"></a> 
 </div>
 
-<!--- <script>
+<script>
 window.onscroll = function() {myFunction()};
 
-var navbar = document.getElementById("topnav");
+var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
 
 function myFunction() {
@@ -353,7 +384,7 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
-</script> --->
+</script>
 
 <!--- <h1 class="greeting" style= "margin-bottom: 72px; margin-top: 12px;"> <a href="https://nigeldurham.github.io/ux/contact.html">contact</a></h1> --->
 <!--- <div style="margin-left: 120px; margin-bottom: 172px; margin-top: 172px"> --->
