@@ -3,6 +3,7 @@
 <head>
 <title>à</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body {
     font-family: helvetica;
@@ -104,9 +105,15 @@ a{
     color: #2B2B2B;	
     background-color: white;
 }
+.topnav #myLinks {
+  display: none;
+}
 .topnav a{
     font-size: 24px;
     padding: 10px;
+}
+.topnav a.icon {
+  float: right;
 }
 .topnav-right{
     text-align: center;
@@ -296,10 +303,15 @@ a{
 <!--- <h1 class ="greeting" style= "margin-top: 32px;"> <a href= "https://nigeldurham.github.io/ux/art.html">art</a></h3>
 <h1 class= "greeting"> <a href= "https://nigeldurham.github.io/ux/work.html">work</a></h3> --->
     
-<div id="navbar">
+<div class="topnav">
+<div id="myLinks">
 <a href="https://www.nigeldurham.com/about.html">About</a>
 <a href="https://www.nigeldurham.com/index.html">Work</a>
 <a href="https://www.nigeldurham.com/contact.html">Contact</a>
+</div>
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+<i class="fa fa-bars"></i>
+</a>
 </div>
 
 <h1 class="title">À</h1>
@@ -338,6 +350,17 @@ a{
 </div>
     
 <script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+    
+<!--- <script>
 window.onscroll = function() {myFunction()};
 
 var navbar = document.getElementById("navbar");
@@ -350,7 +373,7 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
-</script>
+</script> --->
     
 <!--- <h1 class="greeting" style= "margin-bottom: 72px" > <a href="https://nigeldurham.github.io/ux/contact.html">contact</a></h1> --->
 <!--- <h3 class="section-header2">me<br>here</h3> --->
