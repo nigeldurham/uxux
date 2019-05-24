@@ -219,6 +219,21 @@ a {
   clear: both;
   display: table;
 }
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: white;
+}
+.container:hover .overlay {
+  opacity: .5;
+}
     }
         }
 </style>
@@ -235,7 +250,10 @@ a {
     
 <div id="carousel">
 <div class="slide">
-<span title="À<br>mobile gallery"><a href="https://www.nigeldurham.com/à.html"><img class="project-image1" src="afinale.png"></a></span>
+<a href="https://www.nigeldurham.com/à.html"><img class="project-image1" src="afinale.png"></a>
+<div class="overlay">
+<div class="text">À<br>Mobile Gallery</div>
+</div>
 </div>
     
 <div class="slide">
