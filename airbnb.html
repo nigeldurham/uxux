@@ -303,6 +303,38 @@ a {
 .sticky + .content {
   padding-top: 60px;
 }
+.no-touch #cd-vertical-nav {
+  /*fix the navigation*/
+  position: fixed;
+  right: 40px;
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
+}
+
+.no-touch #cd-vertical-nav a span {
+  float: right;
+  /*scale down navigation dots and labels*/
+  transform: scale(0.6);
+}
+
+.no-touch #cd-vertical-nav .cd-dot {
+  transform-origin: 50% 50%;
+}
+
+.no-touch #cd-vertical-nav .cd-label {
+  transform-origin: 100% 50%;
+}
+
+.no-touch #vertical-nav a:hover span {
+  /*scale up navigation dots and labels*/
+  transform: scale(1);
+}
+
+.no-touch #cd-vertical-nav a:hover .cd-label {
+  /*show labels*/
+  opacity: 1;
+}
     }
         }         
 </style>
@@ -366,6 +398,44 @@ function myFunction() {
   }
 }
 </script>
+                                    
+<a class="cd-nav-trigger cd-img-replace">Open navigation</a>
+<nav id="cd-vertical-nav">
+   <ul>
+      <li>
+         <a href="#section1" data-number="1">
+            <span class="cd-dot"></span>
+            <span class="cd-label">intro</span>
+         </a>
+      </li>
+      <li>
+         <a href="#section2" data-number="2">
+            <span class="cd-dot"></span>
+            <span class="cd-label">ideation</span>
+         </a>
+      </li>
+      <li>
+         <a href="#section3" data-number="3">
+            <span class="cd-dot"></span>
+            <span class="cd-label">development</span>
+         </a>
+      </li>
+      <li>
+         <a href="#section4" data-number="4">
+            <span class="cd-dot"></span>
+            <span class="cd-label">product</span>
+         </a>
+      </li>                         
+   </ul>
+</nav>
+
+<section id="intro" class="cd-section">
+   <!-- content here -->
+</section>
+
+<section id="section2" class="cd-section">
+   <!-- content here -->
+</section>                           
 
 </div>
 
