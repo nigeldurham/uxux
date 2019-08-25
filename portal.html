@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>blueberry</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+    font-family: helvetica;
+    color: black;
+    background-color: white;
+}
+h1, h2, h3, h4, p, a {
+    font-weight: 100;
+}
+h1, h2, h3, h4 {
+    margin-bottom: 54px;
+}
+.title {
+    font-size: ;
+    margin-top: 10%;
+    text-align: center;
+    margin-right: ;
+    margin-left: ;
+    font-weight: bold;
+}
+.intro {
+    font-size: ;
+    margin-top: -36px;
+    text-align: center;
+    margin-right: 0px;
+    margin-left: 0px;
+    line-height: ;
+}
+.section-header {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: ;
+    margin-top: -36px;
+    margin-left: ;
+    margin-right: ;
+    line-height: 1.5;
+}
+.project-block {
+    text-align: center;
+    margin-bottom: 48px;
+    margin-top: 32px;
+}
+.process-header {
+    font-size: 24px;
+    margin-bottom: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.process-subheader {
+    font-size: 20px;
+    margin-top: 0px;
+    margin-left: 36px;
+    margin-right: 36px;
+    margin-bottom: 28px;
+    line-height: 1.5;
+}
+.team {
+    width: 100px;
+    margin-bottom: 12px;
+}
+.task {
+    width: 150px; 
+    margin-bottom: -15px;
+    margin-top: -24px;
+}
+.project-image {
+    width: 115px;
+    margin-bottom: 12px;
+    margin-top: -6px;
+    border-radius: 2px; 
+}
+.dots {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -23px;
+    margin-bottom: 38px;
+}
+.project-image1 {
+    width: 275px;
+    margin-bottom: 12px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.project-image2 {
+    width: 275px;
+    margin-bottom: 12px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.project-image3 {
+    width: 275px;
+    margin-bottom: 12px;
+    margin-top: 0px;
+}
+a{
+    color: black;
+    border-bottom: 0px;
+    font-size: 11vh;
+    text-decoration: unset;
+    font-weight: 300;
+}
+.back-button {
+    img-align: right;
+    margin-right: ;
+    height: 40px;
+    margin-bottom: 54px; 
+    margin-top: 4px;
+}
+.topnav a {
+    font-size: 24px;
+    padding: 10px;
+}
+.topnav-right {
+    text-align: center;
+    margin-right: 0px;
+    margin-top: 24px;
+    font-size: 24px;
+}
+#navbar {
+  overflow: hidden;
+  background-color: white;
+  text-align: center;
+  margin-right: 0px;
+  margin-top: 0px;
+  font-size: 24px;
+}
+#navbar a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 16px 10px;
+  text-decoration: none;
+  font-size: 24px;
+}
+#navbar a.active {
+  background-color: white;
+  color: black;
+}
+.content {
+  padding: 16px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%; 
+  right: 0;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+.color {
+    color: blue;
+}
+@media only screen and (min-device-width: 768px) {  
+.title {
+    font-size: 10vh;
+    text-align: center;
+    margin-right: 84px;
+    margin-left: 84px;
+}
+.dots {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 72px;
+    margin-bottom: 0px;
+}
+.greeting {
+    font-size: 119px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 54px;
+}
+a {
+    color: black;
+    border-bottom: 0px;
+    font-size: 119px;
+    text-decoration: unset;
+    font-weight: 300;
+}
+.project-block {
+    text-align: center;
+    margin-bottom: 48px;
+    margin-top: 54px;
+}
+.intro {
+    font-size: 10vh;
+    margin-top: -12px;
+    text-align: center;
+    margin-right: 84px;
+    margin-left: 84px;
+    line-height: ;
+}
+.section-header {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: ;
+    margin-top: 24px;
+    margin-left: ;
+    line-height: 1.5;
+}
+.project-block {
+    text-align: center;
+    margin-bottom: ;
+    margin-top: ;
+}
+.process-header {
+    font-size: 48px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+.process-subheader {
+    font-size: 24px;
+    margin-top: 24px;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-bottom: 0px;
+    line-height: 2;
+}
+.project-image {
+    width: 225px;
+    margin-bottom: 50px;
+    margin-top: 72px;
+    border-radius: 3px;
+}
+.team {
+    width: 250px;
+    margin-top: 148px;
+}
+.task {
+    width: 250px;
+    margin-bottom: -15px;
+}
+.project-image1 {
+    width: 542.5px;
+    margin-bottom: 24px;
+    margin-top: 12px;
+    margin-left: 0px;
+}
+.project-image2 {
+    width: 550px;
+    margin-bottom: 24px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.project-image3 {
+    width: 550px;
+    margin-bottom: 0px;
+    margin-top: 12px;
+}
+.back-button {
+    height: 50px;
+    text-align: right;
+    margin-right: ;
+    margin-top: 36px; 
+    margin-bottom: 54px;
+}
+.topnav {
+    font-family: helvetica;	
+    color: black;	
+    background-color: white;
+ }
+.topnav a {
+    font-size: 24px;
+    padding: 10px;
+}
+.topnav-right{
+    text-align: right;
+    margin-right: 24px;
+    margin-top: 24px;
+    font-size: 24px;
+}
+#navbar {
+  overflow: hidden;
+  background-color: white;
+  text-align: right;
+  margin-right: 24px;
+  margin-top: 0px;
+  font-size: 24px;
+}
+#navbar a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: ;
+  text-decoration: none;
+  font-size: 24px;
+}
+#navbar a.active {
+  background-color: white;
+  color: black;
+}
+.content {
+  padding: 16px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 97.8%; 
+  right: 0;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+    }
+        }
+</style>
+</head>
+
+<body>
+    
+
+
+<div id="navbar">
+<a href="https://www.nigeldurham.com/about.html">about</a>
+<a href="https://www.nigeldurham.com/index.html" style="font-weight: bold">work</a>
+<a href="https://www.nigeldurham.com/contact.html">contact</a>
+</div>
+
+<h1 class="title">"portal"</h1>
+<h2 class="intro">web browswer</h2>
+<h2 class="section-header">immersive web experience</h3>
+
+<img class="dots" src="three-dots-menu-png-5.png" style="text-align: center; height: 40px">
+
+<div class="project-block">
+    <img class="team" src="profileicon.png"> 
+    <h3 class="process-header">team</h3>
+    <h4 class="process-subheader">independent project</h4>
+</div>  
+
+<div class="project-block">
+    <img class="task" src="laptop.png"> 
+    <h3 class="process-header">ideation</h3>
+    <h4 class="process-subheader">design an immersive web platform that reduces visual clutter to amplify the web-product experience</h4>
+</div>
+    
+<div class="project-block">
+    <img class="project-image1" src="laptop.png"> 
+    <h3 class="process-header">features</h3>
+    <h4 class="process-subheader">dot search - an animated action that reduces the search bar to a central dot that upon clicking opens a search bar</h4>
+</div>
+
+<div class="project-block">
+    <img class="project-image2" src="Screen Shot 2018-12-09 at 12.11.38 AM.png">
+    <h3 class="process-header">development</h3>
+    <h4 class="process-subheader">we minimized the amount of visual clutter, reducing the copy complexity to direct users with more useful content</h4>
+</div>
+    
+<div class="project-block">
+    <img class="project-image2" src="Screen Shot 2018-12-09 at 12.11.38 AM.png">
+    <h3 class="process-header">problems</h3>
+    <h4 class="process-subheader">some users noted that they felt the design changes did little to entice them to sign up for the product</h4>
+</div>
+   
+<div class="project-block">
+    <img class="project-image2" src="Screen Shot 2018-12-09 at 12.11.38 AM.png">
+    <h3 class="process-header">solutions</h3>
+    <h4 class="process-subheader">interestingly, most vistors to the site were introduced by word-of-mouth, already holding some interest in or knoweldge of the product prior to visiting</h4>
+</div>
+  
+<div class="project-block">
+    <img class="project-image3" src="Blueberry3clean.png">
+    <h3 class="process-header">product</h3>
+    <h4 class="process-subheader">a/b testing verified that our streamlined journey had significantly increased membership sign ups</h4>
+</div> 
+
+<div style="text-align:center">    
+<a href= "https://nigeldurham.github.io/ux/index.html"><img class="back-button" src="backarrow1.png"></a> 
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+    
+</div>
+
+</body>
+</html>
