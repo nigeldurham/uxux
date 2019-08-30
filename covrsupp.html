@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>covr</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+    font-family: helvetica;
+    color: black;
+    background-color: white;
+}
+h1, h2, h3, h4, p, a {
+    font-weight: 100;
+}        
+h1, h2, h3, h4 {
+    margin-bottom: 54px;
+}
+.dots {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -32px;
+    margin-bottom: 0px;
+    height: 30px;
+}
+.title {
+    font-size: ;
+    margin-top: 10%;
+    text-align: center;
+    margin-right: ;
+    margin-left: ;
+    font-weight: bold;
+}
+.intro {
+    font-size: ;
+    margin-top: -36px;
+    text-align: center;
+    margin-right: 0px;
+    margin-left: 0px;
+    line-height: ;
+}
+.section-header {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: ;
+    margin-top: -36px;
+    margin-left: 32px;
+    margin-right: 32px;
+    line-height: 1.5;
+}
+.project-block {
+    text-align: center;
+    margin-bottom: 64px;
+    margin-top: 48px;
+}
+.process-header {
+    font-size: 24px;
+    margin-bottom: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.process-subheader {
+    font-size: 20px;
+    margin-top: 0px;
+    margin-left: 36px;
+    margin-right: 36px;
+    margin-bottom: 28px;
+    line-height: 1.5;
+}
+.team {
+    width: 75px; 
+    margin-top: -12px;
+    margin-left: 0px;
+}
+.task{
+    width: 150px; 
+    margin-bottom: -15px;
+    margin-top: -54px;
+}
+.project-image {
+    width: 300px;
+    margin-bottom: -24px;
+    margin-top: -42px;
+}
+.project-image1 {
+    width: 115px;
+    margin-bottom: 12px;
+    margin-top: -24px;
+    margin-left: 0px;
+}
+.project-image2 {
+    width: 125px;
+    margin-bottom: 12px;
+    margin-top: -24px;
+    margin-left: 0px;
+}
+.project-image3 {
+    width: 175px;
+    margin-bottom: 12px;
+    margin-top: -24px;
+}
+ a {
+    color: black;
+    border-bottom: 0px;
+    font-size: 11vh;
+    text-decoration: unset;
+    font-weight: 300;
+        }
+.back-button {
+    img-align: right;
+    margin-right: ;
+    height: 35px;
+    margin-bottom: 54px; 
+    margin-top: -54px;
+    text-align: right;
+    }
+.topnav a {
+    font-size: 24px;
+    padding: 10px;
+    }
+.topnav-right {
+    text-align: center;
+    margin-right: 0px;
+    margin-top: 24px;
+    font-size: 24px;
+    }
+#navbar {
+  overflow: hidden;
+  background-color: white;
+  text-align: center;
+  margin-right: 0px;
+  margin-top: 0px;
+  font-size: 24px;
+}
+#navbar a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 16px 10px;
+  text-decoration: none;
+  font-size: 24px;
+}
+#navbar a.active {
+  background-color: white;
+  color: black;
+}
+.content {
+  padding: 16px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%; 
+  right: 0;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+.color {
+    color: blue;
+    }
+@media only screen and (min-device-width: 768px) {
+.title {
+    font-size: 10vh;
+    margin-top: 10%;
+    text-align: center;
+    margin-right: 84px;
+    margin-left: 84px;
+    font-weight: bold;
+}
+.project-block {
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 42px;
+}
+.dots {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 72px;
+    margin-bottom: 0px;
+    height: 60px;
+}
+.dots2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 72px;
+    margin-bottom: 0px;
+    height: 30px;
+}
+.greeting {
+    font-size: 119px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 54px;
+}
+ a {
+    color: black;
+    border-bottom: 0px;
+    font-size: 119px;
+    text-decoration: unset;
+    font-weight: 300;
+}
+.emoji {
+    width: 75px;
+    margin-bottom: -5px;  
+    margin-left: 12px;
+}
+.intro {
+    font-size: 10vh;
+    margin-top: -32px;
+    text-align: center;
+    margin-right: 84px;
+    margin-left: 84px;
+    line-height: 1.5;
+}
+.section-header {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: ;
+    margin-top: 24px;
+    margin-left: ;
+    line-height: 1.5;
+}
+.project-block {
+    text-align: center;
+    margin-bottom: ;
+    margin-top: ;
+}
+.process-header {
+    font-size: 48px;
+    margin-bottom: 12px;
+    margin-top: 24px;
+    font-weight: bold;
+}
+.process-subheader {
+    font-size: 24px;
+    margin-top: 24px;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-bottom: 28px;
+    line-height: 2;
+}
+.team {
+    width: 150px; 
+    margin-top: 148px;
+    margin-left: 0px;
+    margin-bottom: 32px;
+}
+.task{
+    width: 250px; 
+    margin-bottom: -15px;
+    }
+.project-image {
+    width: 700px;
+    height: ;
+    margin-bottom: -64px;
+    margin-top: 22px;
+    margin-left: 0px;
+}
+.project-image1 {
+    width: 250px;
+    margin-bottom: 12px;
+    margin-top: 24px;
+    margin-right: -3px;
+}
+.project-image2 {
+    width: 250px;
+    margin-bottom: 12px;
+    margin-top: 24px;
+    margin-left: 0px;
+}
+.project-image3 {
+    width: 300px;
+    margin-bottom: 12px;
+    margin-top: 24px;
+    margin-right: -3px;
+}
+.back-button {
+    height: 50px;
+    margin-right: ;
+    margin-top: 32px;
+    margin-bottom: 54px;
+    text-align: center;
+}
+.topnav {
+    font-family: helvetica;	
+    color: black;	
+    background-color: white;
+}
+.topnav a {
+    font-size: 24px;
+    padding: 10px;
+}
+.topnav-right{
+    text-align: center;
+    margin-right: 24px;
+    margin-top: 0px;
+    font-size: 24px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  right: 0;
+}
+#navbar {
+  overflow: hidden;
+  background-color: white;
+  text-align: right;
+  margin-right: 24px;
+  margin-top: 0px;
+  font-size: 24px;
+}
+#navbar a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 16px 10px;
+  text-decoration: none;
+  font-size: 24px;
+    
+#navbar a.active {
+  background-color: white;
+  color: black;
+}
+.content {
+  padding: 16px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%; 
+  right: 0;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+#carousel {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    overflow: visible;
+    white-space: nowrap;
+    margin-top: 0%;
+    margin-left: 24px; 
+    position: absolute;
+}
+#carousel .slide {
+    display: inline-block;
+    padding: 20px; 
+}
+.bannerContainer {
+    position:relative;     
+}
+* {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.tales {
+  width: 100%;
+}
+.carousel-inner{
+  width: 100%;
+  max-height: 200px;
+  margin: auto;
+}
+    }
+        }
+    
+</style>
+</head>
+<body>
+
+<div id="navbar">
+<a href="https://www.nigeldurham.com/about.html">about</a>
+<a href="https://www.nigeldurham.com/index.html" style="font-weight: bold">work</a>
+<a href="https://www.nigeldurham.com/contact.html">contact</a>
+</div>
+ 
+<h1 class="title">covr</h1>
+<h2 class="intro">gig application</h2>
+<h2 class="section-header">bringing traveling musicians<br>and dynamic event spaces together</h3>
+</div>
+</div>
+</div>
+
+<img class="dots" src="vtriangle.png">
+
+<div class="project-block">
+    <img class="team" src="guitar.png"> 
+    <h3 class="process-header">project overview</h3>
+    <h4 class="process-subheader">[under construction]</h4>
+</div>  
+    
+<!--- <div class="project-block">
+    <img class="event" src="event.png"> 
+    <h3 class="process-header">project overview</h3>
+    <h4 class="process-subheader">our team of 4 designers created a marketplace for events and spaces on the airbnb platform</h4>
+    <!--- <h4 class="process-subheader"><style=font-weight: bold>100% of users enjoyed the experience<br><br>100% claimed it melded seamlessly with the airbnb experience</h4></style> --->
+</div>
+    
+<div class="project-block">
+    <img class="persona1" src="personaspace.png"> 
+    <h3 class="process-header">persona - aaron</h3>
+    <h4 class="process-subheader">aaron's seeking to share a space on airbnb<br>-<br>he's a young millenial who enjoys helping others, actively seeks new connections, and creating meaningful experiences</h4>
+</div>
+    
+<div class="project-block">
+    <img class="persona2" src="personaevent.png"> 
+    <h3 class="process-header">persona - beth</h3>
+    <h4 class="process-subheader">beth's seeking an open space to host her event<br>-<br>she is a responsible, confident professional who follows a strict schedule</h4>
+</div>
+    
+<div class="project-block">
+    <img class="team" src="airbnb problem.png"> 
+    <h3 class="process-header">problem statement</h3>
+    <h4 class="process-subheader">event hosts are seeking spaces to host their events<br>~<br>how might we connect available spaces with events seamlessly on the airbnb platform?</h4>
+</div>
+    
+<div class="project-block">
+    <img class="midfi" src="midfi.png"> 
+    <h3 class="process-header">solution</h3>
+    <h4 class="process-subheader">we wireframed a solution that allows events and spaces to exist independently on the platform - users can find one another via a central events hub</h4>
+</div>
+    
+<div class="project-block">
+    <img class="team" src="airbnb ace.png"> 
+    <h3 class="process-header">tasks</h3>
+    <h4 class="process-subheader">under "ace events" branding<br>-<br> users are tasked with either posting a space to be found (aaron's flow), or posting an event and finding a space suitable for that event (beth's flow)<br>-<br>following are the primary pain points for users across task flows and usability iterations</h4>
+</div>
+    
+<div class="project-block">
+    <img class="team" src="airbnb iteration 1.0.png"> 
+    <h3 class="process-header">iteration 1</h3>
+    <h4 class="process-subheader">usability notes<br>-<br>3) search bar location is uncommon, confusing<br>6) event tags were obscure, unclear</h4>
+</div>
+    
+<div class="project-block">
+    <img class="task" src="airbnb iteration 2.0.png">
+    <h3 class="process-header">iteration 2</h3>
+    <h4 class="process-subheader">profile screen (L) and detail confirmation (R) finalized for second iteration usability tests</h4>
+</div>
+    
+<div class="project-block">
+    <img class="project-image1" src="airbnb iteration 2.1.png">
+    <h3 class="process-header">iteration 2</h3>
+    <h4 class="process-subheader">usability notes<br>-<br>1) CTA was unclear for the task flow, distracting<br>2) search bar suggestions were confusing</h4>
+</div>
+
+<div class="project-block">
+    <img class="project-image2" src="airbnb iteration 3.0.png">
+    <h3 class="process-header">iteration 3</h3>
+    <h4 class="process-subheader">final iteration<br>-<br>high fidelity prototype with design modifications following two rounds of usability testing<br>-<br>notes refer to most impactful modifications</h4>
+</div>
+
+<div class="project-block">
+    <img class="post-it" src="airbnb iteration 3.1.png">
+    <h3 class="process-header">usability testing</h3>
+    <h4 class="process-subheader">usability notes<br>-<br>3) introduced product branding in promo slot<br>5) users are invited to explore the product</h4>
+</div>
+
+<div class="project-block">
+    <img class="white-board" src="airbnb iteration 3.2.png">
+    <h3 class="process-header">usability testing</h3>
+    <h4 class="process-subheader">usability notes<br>-<br>5) added ability to manage listings</h4>
+</div>
+    
+<div class="project-block">
+    <img class="project-image2" src="airbnb iteration 3.3.png">
+    <h3 class="process-header">usability testing</h3>
+    <h4 class="process-subheader">usability notes<br>-<br>2) social sharing added, including messaging<br 2) users can connect social accounts</h4>
+</div> 
+    
+<div class="project-block">
+    <img class="project-image3" src="airbnb iteration 3.4.png">
+    <h3 class="process-header">usability testing</h3>
+    <h4 class="process-subheader">usability notes<br>-<br>4) infinite scroll added for further browsing</h4>
+</div>
+
+<div class="project-block">
+    <img class="results" src="resultscolor.png">
+    <h3 class="process-header">results</h3>
+    <h4 class="process-subheader">90% of users enjoyed app flow<br>-<br>brand-familiar users commented that our product fit seamlessly within the airbnb experience</h4>
+</div> --->
+    
+<div style="text-align:center;">    
+<a href= "https://www.nigeldurham.com/airbnb.html"><img class="back-button" src= "backarrow1.png"></a> 
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+                                    
+</div>
+
+</body>
+</html>
