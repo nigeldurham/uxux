@@ -83,6 +83,9 @@ a {
   right: 0;
   top: 0;
 }
+.topnav #mylinks {
+  display: none;
+}
 #navbar {
   overflow: hidden;
   background-color: white;
@@ -299,7 +302,8 @@ a {
 
 <body>
 
-<div id="navbar">
+<div class="topnav">
+<div id="mylinks">
 <a href="https://www.nigeldurham.com/about.html">about</a>
 <a href="https://www.nigeldurham.com/index.html" style="font-weight: bold">work</a>
 <a href="https://www.nigeldurham.com/contact.html">contact</a>
@@ -358,7 +362,7 @@ a {
  
 <script>
 function myFunction() {
-var x = document.getElementById("navbar");
+var x = document.getElementById("mylinks");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
