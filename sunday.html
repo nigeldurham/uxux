@@ -330,11 +330,16 @@ a{
 </head>
 
 <body>
-
-<div id="navbar">
-<a href="https://www.nigeldurham.com/about.html">#about</a>
-<a href="https://www.nigeldurham.com/index.html" style="font-weight: bold">#work</a>
-<a href="https://www.nigeldurham.com/contact.html">#contact</a>
+    
+<div class="topnav">
+<div id="mylinks">
+<a href="https://www.nigeldurham.com/about.html">about</a>
+<a href="https://www.nigeldurham.com/index.html" style="font-weight: bold">work</a>
+<a href="https://www.nigeldurham.com/contact.html">contact</a>
+</div>
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+<i class="fa fa-bars"></i>
+</a>
 </div>
 
 <div>
@@ -398,19 +403,15 @@ a{
 </div>
        
 <script>
-window.onscroll = function() {myFunction()};
-
-var icon = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
 function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    icon.classList.add("sticky")
+var x = document.getElementById("mylinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
   } else {
-    icon.classList.remove("sticky");
+    x.style.display = "block";
   }
 }
-</script> 
+</script>   
 
 </div>
 
