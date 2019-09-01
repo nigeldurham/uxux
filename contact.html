@@ -15,14 +15,15 @@ h1, h2, h3, h4, p, a {
 h1, h2, h3, h4 {	
     margin-bottom: -60px;	
 }	
-.intro {	
-    font-size: 82px;	
-    text-align: center;	
-    margin-right: 0px;	
-    margin-left: 0px;
-    margin-top: 43%;
-    font-weight: 500;
-}      
+.icon1 {
+    width: 75px;
+    margin-top: 75px; 
+}
+.icon2 {
+    width: 75px;
+    margin-top: 75px; 
+}
+    
 .clickhere {
     font-size: 24px;
     margin-left: 28px;
@@ -39,40 +40,38 @@ a {
     font-weight: 300;	
 }	
 .topnav {
-    font-family: helvetica;	
-    color: black;	
-    background-color: white;
+  position: fixed;
+  color: black;
+  right: 0;
+}
+.topnav #mylinks {
+  display: none;
 }
 .topnav a {
-    font-size: 24px;
-    padding: 10px;
+    font-size: 20px;
+    padding: 11px 18px;
     color: black;
+    margin-top: 11px;
+    display: block;
+    text-align: right;
+    margin-right: 6px;
 }
-.topnav-right {
-    text-align: center;
-    margin-right: 0px;
-    margin-top: 24px;
-    font-size: 24px;
+.topnav a.icon {
+  margin-right: 12px;
+  font-size: 24px;
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  color: black;
 }
-.icon1 {
-    width: 75px;
-    margin-top: 75px; 
+.active {
+  color: black;
+  background-color: #4CAF50;
 }
-.icon2 {
-    width: 75px;
-    margin-top: 75px; 
-}
-    
+
 @media only screen and (min-device-width: 768px) {  	
 
-.intro {
-    font-size: 10vh;
-    text-align: center;
-    margin-right: 0px;
-    margin-left: 0px;
-    margin-top: 18%;
-    margin-bottom: 0px;
-}
 .clickhere {
     font-size: 24px;
     margin-left: 29px;
