@@ -46,20 +46,34 @@ a {
     font-weight: 300;		
 }	
 .topnav {
-    font-family: helvetica;	
-    color: #2B2B2B;	
-    background-color: white;
+  position: fixed;
+  color: black;
+  right: 0;
+}
+.topnav #mylinks {
+  display: none;
 }
 .topnav a {
-    font-size: 24px;
-    padding: 10px;
+    font-size: 20px;
+    padding: 11px 18px;
     color: black;
+    margin-top: 11px;
+    display: block;
+    text-align: right;
+    margin-right: 6px;
 }
-.topnav-right {
-    text-align: center;
-    margin-right: 0px;
-    margin-top: 24px;
-    font-size: 24px;
+.topnav a.icon {
+  margin-right: 12px;
+  font-size: 24px;
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  color: black;
+}
+.active {
+  color: black;
+  background-color: #4CAF50;
 }
 .clickme {
     margin-left: 92px; 
@@ -129,11 +143,15 @@ a {
 
 <body>
 
-<div class="topnav a">
-<div class="topnav-right">
+<div class="topnav">
+<div id="mylinks">
 <a href="https://www.nigeldurham.com/about.html" style="font-weight: bold">about</a>
 <a href="https://www.nigeldurham.com/index.html">work</a>
 <a href="https://www.nigeldurham.com/contact.html">contact</a>
+</div>
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+<i class="fa fa-bars"></i>
+</a>
 </div>
 </div>
 
@@ -143,3 +161,14 @@ a {
 <img class ="clickme" src="clickme1.png">
 </body>
 </html>
+
+<script>
+function myFunction() {
+var x = document.getElementById("mylinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>  
