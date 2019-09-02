@@ -3,6 +3,7 @@
 <head>
 <title>covr</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body {
     font-family: helvetica;
@@ -25,32 +26,31 @@ h1, h2, h3, h4 {
 }
 .title {
     font-size: ;
-    margin-top: 10%;
+    margin-top: 26%;
     text-align: center;
     margin-right: ;
     margin-left: ;
     font-weight: bold;
 }
 .intro {
-    font-size: ;
+    font-size: 24px;
     margin-top: -36px;
     text-align: center;
     margin-right: 0px;
     margin-left: 0px;
-    line-height: ;
+    line-height: -5px;
 }
 .section-header {
-    font-size: 20px;
+    font-size: 17px;
     text-align: center;
     margin-bottom: ;
-    margin-top: -36px;
     margin-left: 32px;
     margin-right: 32px;
     line-height: 1.5;
 }
 .project-block {
     text-align: center;
-    margin-bottom: 64px;
+    margin-bottom: 80px;
     margin-top: 48px;
 }
 .process-header {
@@ -114,53 +114,39 @@ h1, h2, h3, h4 {
     margin-top: -32px;
     text-align: right;
     }
-.topnav a {
-    font-size: 24px;
-    padding: 10px;
-    }
-.topnav-right {
-    text-align: center;
-    margin-right: 0px;
-    margin-top: 24px;
-    font-size: 24px;
-    }
-#navbar {
-  overflow: hidden;
-  background-color: white;
-  text-align: center;
-  margin-right: 0px;
-  margin-top: 0px;
-  font-size: 24px;
-}
-#navbar a {
-  display: inline-block;
-  color: black;
-  text-align: center;
-  padding: 16px 10px;
-  text-decoration: none;
-  font-size: 24px;
-}
-#navbar a.active {
-  background-color: white;
-  color: black;
-}
-.content {
-  padding: 16px;
-}
-.sticky {
+.topnav {
   position: fixed;
-  top: 0;
-  width: 100%; 
+  color: black;
   right: 0;
 }
-.sticky + .content {
-  padding-top: 60px;
+.topnav #mylinks {
+  display: none;
 }
-
-.color {
-    color: blue;
-    }
+.topnav a {
+    font-size: 20px;
+    padding: 11px 18px;
+    color: black;
+    margin-top: 11px;
+    display: block;
+    text-align: right;
+    margin-right: 6px;
+}
+.topnav a.icon {
+  margin-right: 12px;
+  font-size: 24px;
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  color: black;
+}
+.active {
+  color: black;
+  background-color: #4CAF50;
+}
+    
 @media only screen and (min-device-width: 768px) {
+    
 .title {
     font-size: 10vh;
     margin-top: 10%;
@@ -299,20 +285,29 @@ h1, h2, h3, h4 {
     background-color: white;
 }
 .topnav a {
+    display: block;
     font-size: 24px;
     padding: 10px;
+    color: black;
 }
-.topnav-right{
-    text-align: center;
-    margin-right: 24px;
-    margin-top: 0px;
+.topnav-right {
+    text-align: right;
+    margin-right: 32px;
+    margin-top: -199px;
     font-size: 24px;
+    position: fixed;
+    right: 0;
 }
-.sticky {
+.topnav #myLinks {
+  display: none;
+  float: right;
+  text-align: right;
+}
+.topnav a.icon {
+  display: block;
   position: fixed;
-  top: 0;
-  width: 100%;
   right: 0;
+  top: 0;
 }
 #navbar {
   overflow: hidden;
@@ -326,63 +321,13 @@ h1, h2, h3, h4 {
   display: inline-block;
   color: black;
   text-align: center;
-  padding: 16px 10px;
+  padding: ;
   text-decoration: none;
   font-size: 24px;
-    
+}
 #navbar a.active {
   background-color: white;
   color: black;
-}
-.content {
-  padding: 16px;
-}
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%; 
-  right: 0;
-}
-.sticky + .content {
-  padding-top: 60px;
-}
-#carousel {
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    overflow: visible;
-    white-space: nowrap;
-    margin-top: 0%;
-    margin-left: 24px; 
-    position: absolute;
-}
-#carousel .slide {
-    display: inline-block;
-    padding: 20px; 
-}
-.bannerContainer {
-    position:relative;     
-}
-* {
-  box-sizing: border-box;
-}
-.column {
-  float: left;
-  width: 50%;
-  padding: 5px;
-}
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-.tales {
-  width: 100%;
-}
-.carousel-inner{
-  width: 100%;
-  max-height: 200px;
-  margin: auto;
 }
     }
         }
@@ -391,10 +336,15 @@ h1, h2, h3, h4 {
 </head>
 <body>
 
-<div id="navbar">
+<div class="topnav">
+<div id="mylinks">
 <a href="https://www.nigeldurham.com/about.html">about</a>
 <a href="https://www.nigeldurham.com/index.html" style="font-weight: bold">work</a>
 <a href="https://www.nigeldurham.com/contact.html">contact</a>
+</div>
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+<i class="fa fa-bars"></i>
+</a>
 </div>
  
 <h1 class="title">covr</h1>
@@ -460,19 +410,15 @@ h1, h2, h3, h4 {
 </div>
 
 <script>
-window.onscroll = function() {myFunction()};
-
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
 function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
+var x = document.getElementById("mylinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
   } else {
-    navbar.classList.remove("sticky");
+    x.style.display = "block";
   }
 }
-</script>
+</script>   
 
 </div>
 
