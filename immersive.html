@@ -3,6 +3,7 @@
 <head>
 <title>immersive</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body {
     font-family: helvetica;
@@ -123,50 +124,35 @@ a{
     margin-bottom: 54px; 
     margin-top: -54px;
 }
-.topnav a {
-    font-size: 24px;
-    padding: 10px;
-}
-.topnav-right {
-    text-align: center;
-    margin-right: 0px;
-    margin-top: 24px;
-    font-size: 24px;
-}
-#navbar {
-  overflow: hidden;
-  background-color: white;
-  text-align: center;
-  margin-right: 0px;
-  margin-top: 0px;
-  font-size: 24px;
-}
-#navbar a {
-  display: inline-block;
-  color: black;
-  text-align: center;
-  padding: 16px 10px;
-  text-decoration: none;
-  font-size: 24px;
-}
-#navbar a.active {
-  background-color: white;
-  color: black;
-}
-.content {
-  padding: 16px;
-}
-.sticky {
+.topnav {
   position: fixed;
-  top: 0;
-  width: 100%; 
+  color: black;
   right: 0;
 }
-.sticky + .content {
-  padding-top: 60px;
+.topnav #mylinks {
+  display: none;
 }
-.color {
-    color: blue;
+.topnav a {
+    font-size: 20px;
+    padding: 11px 18px;
+    color: black;
+    margin-top: 11px;
+    display: block;
+    text-align: right;
+    margin-right: 6px;
+}
+.topnav a.icon {
+  margin-right: 12px;
+  font-size: 24px;
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  color: black;
+}
+.active {
+  color: black;
+  background-color: #4CAF50;
 }
 @media only screen and (min-device-width: 768px) {  
 .title {
@@ -286,16 +272,31 @@ a {
     font-family: helvetica;	
     color: black;	
     background-color: white;
- }
+}
 .topnav a {
+    display: block;
     font-size: 24px;
     padding: 10px;
+    color: black;
 }
-.topnav-right{
+.topnav-right {
     text-align: right;
-    margin-right: 24px;
-    margin-top: 24px;
+    margin-right: 32px;
+    margin-top: -199px;
     font-size: 24px;
+    position: fixed;
+    right: 0;
+}
+.topnav #myLinks {
+  display: none;
+  float: right;
+  text-align: right;
+}
+.topnav a.icon {
+  display: block;
+  position: fixed;
+  right: 0;
+  top: 0;
 }
 #navbar {
   overflow: hidden;
@@ -317,18 +318,6 @@ a {
   background-color: white;
   color: black;
 }
-.content {
-  padding: 16px;
-}
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 97.8%; 
-  right: 0;
-}
-.sticky + .content {
-  padding-top: 60px;
-}
     }
         }
 </style>
@@ -336,10 +325,15 @@ a {
 
 <body>
    
-<div id="navbar">
+<div class="topnav">
+<div id="mylinks">
 <a href="https://www.nigeldurham.com/about.html">about</a>
 <a href="https://www.nigeldurham.com/index.html" style="font-weight: bold">work</a>
 <a href="https://www.nigeldurham.com/contact.html">contact</a>
+</div>
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+<i class="fa fa-bars"></i>
+</a>
 </div>
 
 <h1 class="title">immersive</h1>
@@ -365,17 +359,15 @@ a {
 </div>
 
 <script>
-window.onscroll = function() {myFunction()};
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
 function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
+var x = document.getElementById("mylinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
   } else {
-    navbar.classList.remove("sticky");
+    x.style.display = "block";
   }
 }
-</script>
+</script>   
     
 </div>
 
