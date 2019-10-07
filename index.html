@@ -305,6 +305,19 @@ a {
 .sticky + .content {
   padding-top: 60px;
 }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
     }
         }
 </style>
@@ -350,13 +363,12 @@ a {
 
 <div class="topnav">
 <div class="dropdown">
-<div id="mylinks">
+<i class="fa fa-bars"></i>
+<div id="dropdown-contect">
 <a href="https://www.nigeldurham.com/about.html">about</a>
 <a href="https://www.nigeldurham.com/index.html" style="font-weight: bold">work</a>
 <a href="https://www.nigeldurham.com/contact.html">contact</a>
 </div>
-<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-<i class="fa fa-bars"></i>
 </a>
 </div>
 </div> 
