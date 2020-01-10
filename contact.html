@@ -5,8 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">    
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+@font-face {
+    font-family: lato;
+    src: url(Lato-Light.ttf);
+}   
+@font-face {
+    font-family: lato;
+    src: url(Lato-Thin.ttf);
+    font-weight: lighter;
+}  
+@font-face {
+    font-family: lato;
+    src: url(Lato-Hairline.ttf);
+}
 body {	
-    font-family: helvetica;	
+    font-family: lato;	
     color: black;	
     background-color: white;	
 }	
@@ -80,6 +93,12 @@ a {
   color: black;
   background-color: #4CAF50;
 }
+.thin-hamburger {
+    height: 55px;
+    width: 45px;
+    margin-top: -12px;
+    margin-right: 02px;
+}
 
 @media only screen and (min-device-width: 768px) {  	
 
@@ -109,7 +128,7 @@ a {
     margin-left: 0;
 }
 .topnav {
-    font-family: helvetica;	
+    font-family: lato;	
     color: black;	
     background-color: white;
 }
@@ -147,6 +166,12 @@ a {
     margin-top: 50px;
     margin-left: 05px;
 }
+.thin-hamburger {
+    height: 55px;
+    width: 45px;
+    margin-top: -12px;
+    margin-right: 24px;
+}
     }
         }
 </style>
@@ -161,7 +186,7 @@ a {
 <a href="https://nigeldurham.github.io/ux/contact.html" style="font-weight: bold">contact</a>
 </div>
 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-<i class="fa fa-bars"></i>
+<img class="thin-hamburger" src="thin-hamburger.png"></i>
 </a>
 </div>
     
