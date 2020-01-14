@@ -195,7 +195,7 @@ a {
 <!--- <h2 class="clickhere">Email <img class="uparrow" src="uparrowright.png" style="margin-left: 3px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="uparrow" src="uparrow.png" style="margin-right: 3px"> LinkedIn</h2> --->
 </div>
     
-<script>
+<!--- <script>
 function myFunction() {
 var x = document.getElementById("mylinks");
   if (x.style.display === "block") {
@@ -204,7 +204,18 @@ var x = document.getElementById("mylinks");
     x.style.display = "block";
   }
 }
-</script>  
+</script> --->
+    
+<script>
+function myFunction() {
+  var x = document.getElementById("mylinks");
+  if (x.className === "topnav") {
+    x.className += "responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
     
 </body>
 </html>
