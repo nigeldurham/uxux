@@ -194,6 +194,7 @@ a {
 .button {
     border-radius: 0
 }
+    
 .thin-hamburger {
     height: 53px;
     width: 44px;
@@ -397,7 +398,6 @@ a {
     margin-right: 12px;
 }
     
-    
 #nav-toggle { position: absolute; right: 2%; top: 4%; }
     
 #nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
@@ -412,9 +412,11 @@ a {
   content: '';
   text-align: right;
 }
+    
 #nav-toggle span:before {
   top: -8px; 
 }
+    
 #nav-toggle span:after {
   bottom: -8px;
 }
@@ -422,30 +424,31 @@ a {
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
   transition: all 325ms ease-in-out;
 }
+    
 #nav-toggle.active span {
   background-color: transparent;
 }
+    
 #nav-toggle.active span:before, #nav-toggle.active span:after {
   top: 0;
 }
+    
 #nav-toggle.active span:before {
   transform: rotate(45deg);
 }
+    
 #nav-toggle.active span:after {
   transform: rotate(-45deg);
 }
     
-    
-  .nav-list {
-    display: block !important;
-  }
-    
+.nav-list {
+  display: block !important;
+  font-size: 23px;
+}
     
 .nav {
   float: right;
   list-style: none;
-  margin: 0;
-  padding: 0;
   ul {
       list-style: none;
     li {
