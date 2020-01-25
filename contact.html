@@ -170,6 +170,48 @@ a {
     margin-top: -12px;
     margin-right: 28px;
 }
+#nav-toggle { position: absolute; right: 2%; top: 4%; }
+    
+#nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 1px;
+  width: 28px;
+  background: black;
+  position: absolute;
+  display: block;
+  content: '';
+  text-align: right;
+}
+    
+#nav-toggle span:before {
+  top: -8px; 
+}
+    
+#nav-toggle span:after {
+  bottom: -8px;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  transition: all 325ms ease-in-out;
+}
+    
+#nav-toggle.active span {
+  background-color: transparent;
+}
+    
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+    
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+    
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
     }
         }
 </style>
@@ -177,7 +219,9 @@ a {
 
 <body>
     
-<div class="topnav a" id="mylinks">
+<a id="nav-toggle" href="#"><span></span></a>
+    
+<!---  <div class="topnav a" id="mylinks">
 <a href="https://nigeldurham.github.io/ux/index.html" style="text-align: left">contact</a>
 <a href="https://nigeldurham.github.io/ux/about.html">about</a>
 <a href="https://nigeldurham.github.io/ux/index.html">work</a>
@@ -185,7 +229,7 @@ a {
 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
 <img class="thin-hamburger" src="thin-hamburger.png"></i>
 </a>
-</div>
+</div> --->
     
 <div class="intro">
 <a href="mailto:nigel.jp.durham@gmail.com"><img src= "gmail-color.png" class="icon1"></a>
@@ -203,6 +247,13 @@ var x = document.getElementById("mylinks");
   }
 }
 </script> --->
+    
+<script>
+document.querySelector( "#nav-toggle" )
+  .addEventListener( "click", function() {
+    this.classList.toggle( "active" );
+  });
+</script>
     
 <script>
 function myFunction() {
