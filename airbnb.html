@@ -30,30 +30,43 @@ h1, h2, h3, h4 {
     margin-right: auto;
     margin-top: -31px;
     margin-bottom: 0px;
-    height: 22.5px;
+    height: 25px;
 }    
 .title {
     font-size: ;
-    margin-top: 26%;
+    margin-top: 12.5%;
     text-align: center;
     margin-right: ;
     margin-left: ;
-    font-weight: 100;
-    margin-bottom: -8px;
-}    
+}
+.title2 {
+    margin-left: 31px;
+    margin-top: -04px;
+    font-size: 54px;
+}  
 .clipboard {
-    width: 20px;
-    margin-bottom: 16px;
-    margin-right: 6px;
-}   
+    width: 28px;
+    margin-bottom: 06px;
+    margin-right: 2px;
+    margin-left: -24px;
+} 
 .intro {
-    font-size: 17px;
+    font-size: 24px;
     text-align: center;
     margin-right: 0px;
     margin-left: 0px;
-    margin-bottom: -7px;
+    margin-bottom: -17px;
     font-weight: 100;
+    margin-top: -48px;
 }    
+.section-header {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: ;
+    margin-left: ;
+    margin-right: ;
+    line-height: 1.5;
+}   
 .descrip {
     font-size: 17px;
     text-align: center;
@@ -62,14 +75,6 @@ h1, h2, h3, h4 {
     margin-right: 62px;
     line-height: 1.5;
 }   
-.section-header {
-    font-size: 17px;
-    text-align: center;
-    margin-bottom: ;
-    margin-left: 42px;
-    margin-right: 42px;
-    line-height: 1.5;
-}    
 .project-block {
     text-align: center;
     margin-bottom: 80px;
@@ -137,6 +142,19 @@ h1, h2, h3, h4 {
     margin-bottom: 16px;
     margin-top: -42px;    
 }    
+.research {
+    width: 125px;
+    margin-bottom: 27px;
+    margin-top: 26px;
+    margin-right: -1px;
+    opacity: 75%;
+}   
+.project {
+    width: 125px;
+    margin-bottom: 28px;
+    margin-top: 26px;
+    margin-right: -3px;
+}   
 a {
     color: #36454f;
     border-bottom: 0px;
@@ -151,40 +169,6 @@ a {
     margin-bottom: 48px; 
     margin-top: -20px;
 }    
-.topnav {
-  position: fixed;
-  color: #36454f;
-  right: 0;
-}    
-.topnav #mylinks {
-  display: none;
-  margin-top: -38px;
-  margin-right: 26px;
-}    
-.topnav a {
-    font-size: 20px;
-    padding: 0px;
-    color: #36454f;
-    margin-top: 0px;
-    display: block;
-    text-align: right;
-    margin-right: 6px;
-}    
-.topnav a.icon {
-  margin-right: 31px;
-  font-size: 24px;
-  display: block;
-  position: fixed;
-  top: 0;
-  right: 0;
-  color: #36454f;
-  margin-top: 28px;
-}
-    
-.active {
-  color: #36454f;
-  background-color: ;
-}
 .supp {
     font-size: 18px;
     margin-top: -12px;
@@ -194,6 +178,39 @@ a {
     line-height: 2;
 }
 #nav-toggle { position: absolute; right: 5%; top: 5%; }
+#nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 1px;
+  width: 28px;
+  background: black;
+  position: absolute;
+  display: block;
+  content: '';
+  text-align: right;
+}    
+#nav-toggle span:before {
+  top: -8px; 
+}    
+#nav-toggle span:after {
+  bottom: -8px;
+}
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  transition: all 325ms ease-in-out;
+}    
+#nav-toggle.active span {
+  background-color: transparent;
+}    
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}    
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}    
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
     
 @media only screen and (min-device-width: 768px) {  
     
