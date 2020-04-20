@@ -421,7 +421,33 @@ a:hover {
 .nav-list {
   display: block !important;
   font-size: 23px;
-}  
+} 
+button.lame {
+  padding: 0;
+  border: none;
+  outline: none;
+  font: inherit;
+  color: inherit;
+  background: none;
+	margin-right: 24px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  overflow: auto;
+  z-index: 1;
+  font-size: 18px;
+  margin-top: 30px;
+  margin-left: 1px;
+}
+.show {display: block;}
+a.linklink {
+    color: #36454f;
+    border-bottom: 0px;
+    font-size: 24px;
+    text-decoration: unset;
+    font-weight: 300;
+}	
 }
 }
 
@@ -432,7 +458,12 @@ a:hover {
 <div class="title">
 <h1 class="star" src="redcircle.png"><a href="https://nigeldurham.github.io/ux/index.html" style="text-align: left">products</a>
 </div>
-<div id="nav-toggle"><span></span></div>
+<button.lame onclick="myFunction()" class="dropbtn"><div id="nav-toggle"><span></span></button.lame>
+<div id="myDropdown" class="dropdown-content">
+<a href="https://nigeldurham.github.io/uxflex/index.html" class="link">about</a>
+<a href="#about" class="link">work</a>
+<a href="#contact" class="link">contact</a>
+</div>
     
 <!--- <div class="project-block">
 <a href="https://nigeldurham.github.io/ux/blueberryx.html" class="page-header">Nigel Durham is a UX Designer</a>
@@ -506,6 +537,11 @@ document.querySelector( "#nav-toggle" )
 .addEventListener( "click", function() {
 this.classList.toggle( "active" );
 });
+</script>
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
 </script>
 </body>
 </html>
